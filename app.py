@@ -16,9 +16,9 @@ def receive_message():
         return "I'm a simple GroupMe bot built with Python, I take and save pictures shared in a group chat"
     else: # issue response to the received post request (message)
         response = request.get_json()
-        if(response['text'].startswitch('Fort Alert')):
+        if(response['text'].startswith('Fort Alert')):
             print('Awesome')
-        print(response['text'])
+            print(response['text'])
   
         return 'good'    
 
